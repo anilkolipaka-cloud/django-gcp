@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Django GCP Cloud{% endblock %}</title>
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="navbar">
+        <div class="nav-brand">CloudDjango</div>
+        <div class="nav-links">
+            <a href="#" class="nav-link" onclick="alert('Navigation link clicked!')">Features</a>
+            <a href="#" class="nav-link" onclick="alert('Navigation link clicked!')">Deployment</a>
+            <a href="#" class="btn-primary" style="font-size: 0.9rem; padding: 0.5rem 1rem;" onclick="alert('Get Started clicked! Connect this to your registration URL.')">Get Started</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CloudDjango. Designed for GCP Cloud Run.</p>
+    </footer>
+</body>
+</html>

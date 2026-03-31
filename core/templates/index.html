@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="glass-card">
+        <h1 class="hero-title">Deploy Beautiful Django Apps <span class="highlight">Seamlessly</span> to GCP</h1>
+        <p class="hero-subtitle">
+            Experience next-level cloud performance with Google Cloud Run. This backend template is pre-configured, dockerized, and styled to perfection. Ready to scale instantly.
+        </p>
+        <div class="action-buttons">
+            <button class="btn-primary" onclick="alert('Deployment guide coming soon! Connect this to your Django views.')">View Deployment Guide</button>
+            <button class="btn-secondary" onclick="alert('API endpoints will be built here! Connect this to your Django views.')">Explore API</button>
+        </div>
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="feature-card glass-card">
+        <div class="feature-icon">🚀</div>
+        <h3>Cloud Run Ready</h3>
+        <p>Containerized and optimized with Gunicorn and Whitenoise for immediate production deployment.</p>
+    </div>
+    <div class="feature-card glass-card">
+        <div class="feature-icon">✨</div>
+        <h3>Premium Aesthetics</h3>
+        <p>Modern glassmorphism, responsive grid, dynamic gradients, and smooth animations applied by default.</p>
+    </div>
+    <div class="feature-card glass-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>Secure & Scalable</h3>
+        <p>Built with Django's robust security features. Auto-scales from zero to thousands of concurrent requests.</p>
+    </div>
+</section>
+{% endblock %}
